@@ -1,6 +1,8 @@
 import { Header } from './components/Header'
 import { Post } from './Post'
 
+import styles from './App.module.css'
+
 import './global.css'
 
 export function App() {
@@ -9,16 +11,23 @@ export function App() {
     <div>
       <Header />
 
-      <Post 
-        author="Laura Fontolan" 
-        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, veritatis."
-      />
-      <Post 
-        author="Pedro Henrique" 
-        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, veritatis."
-      />
+      <div className={styles.wrapper}>
+        <aside></aside>
+        <main>
+          <Post 
+            author='Laura Fontolan'
+            content='Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+          />
+
+          <Post 
+            author='Pedro Henrique'
+            content='Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+          />
+        </main>
+      </div>
     </div>
   )
 }
+
 
 
