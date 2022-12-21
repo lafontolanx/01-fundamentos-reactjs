@@ -48,6 +48,14 @@ const posts = [1, 2, 5, 4, 3]
 
 Por esse motivo não podemos utilizar o index como key!
 
+## Comunicação entre componentes:
 
+Dentro do react nós podemos passar também funções como parâmetro em um componente, para fazer a comeunicação entre componentes.
+
+## Imutabilidade
+
+* As variáveis não são alteradas, mas sim recriadas. Nós criamos um novo valor (um novo espaço na memória);
+
+* Mais performático, o react consegue identificar que o valor foi alterado e renderizar apenas o que foi alterado (comparando o valor anterior com o novo valor).
 
 
