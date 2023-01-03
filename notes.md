@@ -58,4 +58,18 @@ Dentro do react nós podemos passar também funções como parâmetro em um comp
 
 * Mais performático, o react consegue identificar que o valor foi alterado e renderizar apenas o que foi alterado (comparando o valor anterior com o novo valor).
 
+## Closures no React 
 
+```js
+function Comment() {
+    const [likes, setLikes] = useState(0)
+
+    function addLike() {
+        setLikes(likes + 1); // likes = 0 + 1
+        setLikes(likes + 1); // likes = 1 + 1
+        setLikes(likes + 1); // likes = 2 + 1
+    }
+}
+
+Comment()
+```
